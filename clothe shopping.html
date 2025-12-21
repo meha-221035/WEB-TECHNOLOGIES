@@ -13,11 +13,11 @@
 
         body {
             border:2px rgb(255, 0, 34);
-            background-color: #f5f5f5;
+            background-color: #5ec5d3;
         }
 
         header {
-            background-color: hwb(263 4% 14%);
+            background-color: hwb(0 4% 96%);
             color: white;
             padding: 15px 4px;
             font-size: 24px;
@@ -63,7 +63,7 @@
         .category-list {
             display: flex;
             gap: 100px;
-            background-color: rgb(25, 28, 223);
+          
             padding: 8px;
            
            
@@ -125,8 +125,8 @@
             margin-top: 10px;
             padding: 8px 15px;
             border: none;
-            background-color: black;
-            color: white;
+            background-color: rgb(235, 224, 224);
+            color: rgb(12, 12, 12);
             border-radius: 5px;
             cursor: pointer;
         }
@@ -134,15 +134,23 @@
         .product-card button:hover {
             background-color: #e61190;
         }
+
+         footer {
+      background: #1a1531;
+      color: #f8f5f5;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+    }
     </style>
 </head>
 <body>
 
 
     <header>
-    <marquee style="font-family: cursive;">.......🤍🤍 Welcome To My Clothes 🤍🤍.......</marquee>
+    <marquee style="font-family: cursive;" id="goto">.......🤍🤍 Welcome To My Clothe Galary 🤍🤍.......</marquee>
 </header>
-
+<br>
 
    <section class="hero">
     <img src="Html/WhatsApp Image 2025-12-20 at 9.59.30 AM.jpeg" alt="Hero Image">
@@ -151,7 +159,7 @@
 
 
     <section class="categories">
-        <h2 style="color:rgb(24, 9, 161)">Available Categories</h2>
+        <h2 style="color:rgb(18, 18, 19); border: 2px solid black;"><center>Available Categories</center></h2>
         <div class="category-list">
             <div class="category"><a href="#jeans" style="text-decoration: none;">Jeans</a></div>
             <div class="category"><a href="#shirts" style="text-decoration: none;">Shirts</a></div>
@@ -162,7 +170,7 @@
     </section>
 
     <section class="products">
-        <h2 id="jeans">Jeans</h2>
+        <h2 id="jeans"  style="border: 2px solid black;">Jeans</h2>
         <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.06 AM.jpeg"></div>
@@ -176,24 +184,108 @@
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.05 AM (1).jpeg"></div>
                 <button>Buy Now</button>
             </div>
-        </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM.jpeg"></div>
+                <button>Buy Now</button>
+        </div><br>
 
-        <h2>Shirts</h2>
+        <h2 id="shirts" style="border: 2px solid black;">Shirts</h2>
         <div class="product-row">
             <div class="product-card">
-                <div class="product-img"></div>
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM.jpeg"></div>
                 <button>Buy Now</button>
             </div>
             <div class="product-card">
-                <div class="product-img"></div>
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM (1).jpeg"></div>
                 <button>Buy Now</button>
             </div>
             <div class="product-card">
-                <div class="product-img"></div>
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.03 AM.jpeg"></div>
                 <button>Buy Now</button>
             </div>
-        </div>
-    </section>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (2).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (3).jpeg"></div>
+                <button>Buy Now</button>
+        </div><br>
 
+        <h2 id="t-shirts"  style="border: 2px solid black;">T-shirts</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (1).jpeg"></div>
+                <button>Buy Now</button>
+        </div>
+<br>
+        <h2 id="coats"  style="border: 2px solid black;">Coats</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (2).jpeg"></div>
+                <button>Buy Now</button>
+        </div>
+<br>
+        <h2 id="sharvani"  style="border: 2px solid black;">Sharvani suits</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.55 AM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM (1).jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM.jpeg"></div>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.42 PM.jpeg"></div>
+                <button>Buy Now</button>
+        </div><BR><br><br>
+            <a href="#goto"><button class="product-card button" style="color: aliceblue; background-color: #ec7de3;"><big>Are you guys go to top just click ME</big></button></a>
+    </section>
+<footer><big style="font-family: 'Times New Roman', Times, serif;">...............HAPPY SHOPPING GUYS .............<br>MEHANAZ SHAIK 🤍</big></footer>
 </body>
 </html>
