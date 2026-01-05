@@ -12,15 +12,17 @@
         }
 
         body {
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjM1mksbZ1X1p0qlRUNbgm6mNm6aBte1UoA&s);
+            background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?semt=ais_hybrid&w=740&q=80);
             background-repeat:no-repeat;
             background-size: cover;
 
         }
 
         header {
-            background: linear-gradient(to right, #01174165, #053164);
-            color: white;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KU_5pO-y9DqHxNWF86Vm4atc4CMm46HCjg&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(7, 7, 7);
             padding: 15px 4px;
             font-size: 24px;
             font-weight: bold;
@@ -80,7 +82,7 @@
 
 .category:hover{
   transform:scale(1.1);
-  background:#88ecf3;
+  background:#66eca2;
 }
         .category {
             width: 150px;
@@ -159,8 +161,10 @@
         }
 
          footer {
-      background: #1a1531;
-      color: #f8f5f5;
+      background-image: url(https://t3.ftcdn.net/jpg/17/69/01/26/360_F_1769012661_FxqFiNXSsMRrJUAxebukcVdsKVEO57LY.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #0e0d0d;
       text-align: center;
       padding: 20px;
       font-size: 0.85rem;
@@ -175,11 +179,54 @@
 
 
     <header>
-    <marquee style="font-family: cursive;" id="goto">.......🤍🤍 Welcome To My Cloth Galary 🤍🤍.......</marquee>
+    <marquee direction="right" scrollamount="20" style="font-family: cursive;" id="goto">.......🤍🤍 Welcome To My Cloth Galary 🤍🤍.......</marquee>
 </header>
 <br>
 
 
+<div class="home-bar">
+
+    <div class="left-links">
+        <a href="#">Home</a>
+        <a href="#">MENS WEAR</a>
+        <a href="#">Track Order</a>
+        <a href="#">HELP</a>
+        <a href="#">Contact</a>
+    </div>
+<script src="javascript.js"></script>
+
+<script>
+function wishlist() {
+    alert("Added to Wishlist ❤️");
+}
+
+function login() {
+    alert("Login / Signup Page");
+}
+
+function cart() {
+    alert("Your Cart is Empty 🛒");
+}
+
+document.getElementById("searchInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        alert("Searching for: " + this.value);
+    }
+});
+
+function cart(){
+    alert("Added to cart shop for more")
+}
+</script>
+
+    <div class="right-icons">
+        <input type="text" id="searchInput" placeholder="Search">
+        <span onclick="wishlist()">♡</span>
+        <span onclick="login()">👤</span>
+        <span onclick="cart()">🛒</span>
+    </div>
+
+</div>
 
    <section class="hero">
     <img src="Html/WhatsApp Image 2025-12-20 at 9.59.30 AM.jpeg" alt="Hero Image">
@@ -203,115 +250,115 @@
         <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.06 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.05 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.05 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
              <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
         </div><br>
 
         <h2 id="shirts" style="border: 2px solid black;">Shirts</h2>
         <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.03 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
              <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (2).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (3).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
         </div><br>
 
         <h2 id="t-shirts"  style="border: 2px solid black;">T-shirts</h2>
           <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
              <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
         </div>
 <br>
         <h2 id="coats"  style="border: 2px solid black;">Coats</h2>
           <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
              <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (2).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
         </div>
 <br>
         <h2 id="sharvani"  style="border: 2px solid black;">Sharvani suits</h2>
           <div class="product-row">
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.55 AM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM (1).jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
              <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
             </div>
             <div class="product-card">
                 <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.42 PM.jpeg"></div>
-                <button>Buy Now</button>
+                <button onclick="cart()">Buy Now</button>
         </div><BR><br><br>
             <a href="#goto"><button class="product-card button" style="color: aliceblue; background-color: #ec7de3;"><big>Are you guys go to top just click ME</big></button></a>
     </section>
