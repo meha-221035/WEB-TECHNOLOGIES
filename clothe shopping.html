@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clothing Brand</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?semt=ais_hybrid&w=740&q=80);
+            background-repeat:no-repeat;
+            background-size: cover;
+
+        }
+
+        header {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KU_5pO-y9DqHxNWF86Vm4atc4CMm46HCjg&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(7, 7, 7);
+            padding: 15px 4px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px black;
+        }
+
+        .hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px black;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(243, 239, 239);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+    h2{
+        background: linear-gradient(to right, #1b074b, #332894 );
+        color:white;
+        padding:10px;
+        border-radius:12px;
+        text-align:center;
+        box-shadow: 0 6px 15px black;
+        margin-bottom: 20px;
+    }
+
+        .categories {
+            padding: 40px;
+        }
+
+
+        .category-list {
+            display: flex;
+            gap: 100px;
+            flex-warp:wrap;
+            padding: 8px;
+            justify-content: center;
+           
+           
+        }
+
+.category:hover{
+  transform:scale(1.1);
+  background:#66eca2;
+}
+        .category {
+            width: 150px;
+            height: 100px;
+            background-color: rgb(240, 243, 245);
+            backdrop-filter: blur(8px);
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 20px 8px rgba(7, 2, 2, 0.1);
+             margin-left: 20px;
+             transition: 0.4s;
+        }
+.category a{
+  text-decoration:none;
+  color:black;
+}
+        
+        .products {
+            padding: 40px;
+        }
+
+        .product-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            width: 220px;
+            background-color: rgb(6, 1, 14);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.4s;
+        }
+.product-card:hover{
+  transform:translateY(-15px) scale(1.05);
+}
+
+        .product-img {
+    width: 100%;
+    height: 250px;         
+    overflow: hidden;       
+    border-radius: 8px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: 0.4s;     
+}
+.product-card:hover img{
+  transform:scale(1.1);
+}
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color: rgb(235, 224, 224);
+            color: rgb(12, 12, 12);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #e61190;
+        }
+
+         footer {
+      background-image: url(https://t3.ftcdn.net/jpg/17/69/01/26/360_F_1769012661_FxqFiNXSsMRrJUAxebukcVdsKVEO57LY.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #0e0d0d;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+       box-shadow:0 -8px 20px rgba(0,0,0,0.4);
+    }
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+    <marquee direction="right" scrollamount="20" style="font-family: cursive;" id="goto">.......🤍🤍 Welcome To My Cloth Galary 🤍🤍.......</marquee>
+</header>
+<br>
+
+
+<div class="home-bar">
+
+    <div class="left-links">
+        <a href="#">Home</a>
+        <a href="#">MENS WEAR</a>
+        <a href="#">Track Order</a>
+        <a href="#">HELP</a>
+        <a href="#">Contact</a>
+    </div>
+<script src="javascript.js"></script>
+
+<script>
+function wishlist() {
+    alert("Added to Wishlist ❤️");
+}
+
+function login() {
+    alert("Login / Signup Page");
+}
+
+function cart() {
+    alert("Your Cart is Empty 🛒");
+}
+
+document.getElementById("searchInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        alert("Searching for: " + this.value);
+    }
+});
+
+function cart(){
+    alert("Added to cart shop for more")
+}
+</script>
+
+    <div class="right-icons">
+        <input type="text" id="searchInput" placeholder="Search">
+        <span onclick="wishlist()">♡</span>
+        <span onclick="login()">👤</span>
+        <span onclick="cart()">🛒</span>
+    </div>
+
+</div>
+
+   <section class="hero">
+    <img src="Html/WhatsApp Image 2025-12-20 at 9.59.30 AM.jpeg" alt="Hero Image">
+    <div class="hero-text" style="font-family: cursive;color: rgb(248, 245, 245);"><big>Mehanaz cloth Galary</big></div>
+</section>
+
+
+    <section class="categories">
+        <h2 ><center>Available Categories</center></h2>
+        <div class="category-list">
+            <div class="category"><a href="#jeans" style="text-decoration: none;">Jeans</a></div>
+            <div class="category"><a href="#shirts" style="text-decoration: none;">Shirts</a></div>
+            <div class="category"><a href="#t-shirts" style="text-decoration: none;">T-Shirts</a></div>
+            <div class="category"><a href="#coats" style="text-decoration: none;">Coats</a></div>
+            <div class="category"><a href="#sharvani" style="text-decoration: none;">Sharvani suits</a></div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 id="jeans"  >Jeans</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.06 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.05 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.05 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.45 PM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+        </div><br>
+
+        <h2 id="shirts" style="border: 2px solid black;">Shirts</h2>
+        <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.04 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.03 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (2).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (3).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+        </div><br>
+
+        <h2 id="t-shirts"  style="border: 2px solid black;">T-shirts</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.02 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.44 PM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+        </div>
+<br>
+        <h2 id="coats"  style="border: 2px solid black;">Coats</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.01 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.57.00 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM (2).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+        </div>
+<br>
+        <h2 id="sharvani"  style="border: 2px solid black;">Sharvani suits</h2>
+          <div class="product-row">
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.55 AM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-20 at 9.56.59 AM (1).jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+             <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.43 PM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="Html/WhatsApp Image 2025-12-21 at 3.34.42 PM.jpeg"></div>
+                <button onclick="cart()">Buy Now</button>
+        </div><BR><br><br>
+            <a href="#goto"><button class="product-card button" style="color: aliceblue; background-color: #ec7de3;"><big>Are you guys go to top just click ME</big></button></a>
+    </section>
+
+<footer><big style="font-family: 'Times New Roman', Times, serif;">...............HAPPY SHOPPING GUYS 💖.............<br>MEHANAZ SHAIK 🤍</big></footer>
+</body>
+</html>
+

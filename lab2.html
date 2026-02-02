@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Calculator Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background:skyblue;
+      color: #333;
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #4f46e5;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .card label {
+      font-size: 0.85rem;
+      display: block;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    .card input {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      cursor: not-allowed; 
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Calculator Hub</h1>
+    <p>Simple calculator UI using only HTML & CSS</p>
+  </header>
+
+  <section class="container">
+
+    <!-- Simple Calculator -->
+    <div class="card">
+      <h2>Simple Calculator</h2>
+      <p>Add, subtract, multiply and divide</p>
+      <label>Number 1</label>
+      <input type="number" placeholder="Enter first number" />
+      <label>Number 2</label>
+      <input type="number" placeholder="Enter second number" />
+      <button>Calculate</button>
+    </div>
+
+    <!-- Age Calculator -->
+    <div class="card">
+      <h2>Age Calculator</h2>
+      <p>Calculate age from date of birth</p>
+      <label>Date of Birth</label>
+      <input type="date" />
+      <button>Calculate Age</button>
+    </div>
+
+    <!-- Percentage Calculator -->
+    <div class="card">
+      <h2>Percentage Calculator</h2>
+      <p>Find percentage easily</p>
+      <label>Total Value</label>
+      <input type="number" placeholder="Enter total" />
+      <label>Obtained Value</label>
+      <input type="number" placeholder="Enter obtained" />
+      <button>Find Percentage</button>
+    </div>
+
+  </section>
+
+  <footer>
+      just tried html and css
+  </footer>
+
+</body>
+</html>
