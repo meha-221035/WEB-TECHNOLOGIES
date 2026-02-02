@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN DETAILS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             background-image:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("https://images.unsplash.com/photo-1508780709619-79562169bc64");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        section {
+            padding: 30px 35px;
+            width: 380px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+             backdrop-filter: blur(10px);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fffefe;
+        }
+
+        label {
+            margin: 8px 0 5px;
+            font-weight: bold;
+            color: #f5f2f2;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="login.php" method="post">
+            <h2>Login Details</h2>
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Password:</label>
+            <input type="password" name="pass">
+
+            <button>LOGIN</button>
+        </form>
+    </section>
+
+</body>
+</html>
